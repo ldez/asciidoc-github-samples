@@ -1,0 +1,85 @@
+
+[TIP]
+.Admonition and callout icons
+====
+Asciidoctor can "`draw`" icons using {uri-fontawesome}[Font Awesome^] and CSS.
+
+To use this feature, set the value of the `icons` document attribute to `font`.
+Asciidoctor will then emit HTML markup that selects an appropriate font character from the Font Awesome font for each admonition block.
+
+Icons can also be used {uri-icon-in}[inline] and {uri-icon-attrs}[styled].
+====
+
+foobar
+
+[NOTE]
+.Admonition and callout icons
+We consider this code to be placed inside an OSGi bundle
+
+foo
+
+[NOTE]
+.Admonition and callout icons
+====
+* When `indent` is 0, the leading block indent is stripped (tabs are replaced with 4 spaces).
+* When `indent` is > 0, the leading block indent is first stripped (tabs are replaced with 4 spaces), then a block is indented by the number of columns equal to this value.
+====
+foo
+
+[NOTE]
+.Admonition and callout icons
+--
+* When `indent` is 0, the leading block indent is stripped (tabs are replaced with 4 spaces).
+* When `indent` is > 0, the leading block indent is first stripped (tabs are replaced with 4 spaces), then a block is indented by the number of columns equal to this value.
+--
+foo
+
+NOTE: a *pro* _tip_...
+foo bar
+
+[TIP]
+.Info
+=====
+Go to this URL to learn more about it:
+
+* http://asciidoc.org
+
+Or you could return to the xref:first-steps-with-asciidoc[] or <<purpose,Purpose>>.
+=====
+foo
+
+TIP: a *pro* _tip_...
+
+foo
+
+[IMPORTANT]
+.Info
+=====
+Go to this URL to learn more about it:
+
+* http://asciidoc.org
+
+Or you could return to the xref:first-steps-with-asciidoc[] or <<purpose,Purpose>>.
+=====
+
+foo
+
+IMPORTANT: a *pro* _tip_...
+
+foo
+
+[WARNING]
+.Info
+=====
+Go to this URL to learn more about it:
+
+* http://asciidoc.org
+
+Or you could return to the xref:first-steps-with-asciidoc[] or <<purpose,Purpose>>.
+=====
+
+foo
+
+WARNING: a *pro* _tip_...
+
+foo bar
