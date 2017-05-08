@@ -1,0 +1,105 @@
+= Document Title
+Doc Writer <thedoc@asciidoctor.org>
+:idprefix: id_
+
+Preamble paragraph.
+
+NOTE: This is test, only a test.
+
+== Section A
+
+*Section A* paragraph.
+
+.Section A unordered list
+* Item 1 http://www.docbook.org
+* Item 2
+* *Item 3*
+* Item 4
+** level 2
+*** level 3
+**** level 4
+***** level 5
+
+.Section A ordered list
+. Item 1
+. Item 2
+. Item 3
+.. level 2
+... level 3
+.... level 4
+..... level 5
+
+.Section A numbered list
+1. Item 1
+2. Item 2
+3. *Item 3*
+4. Item 4
+
+.Section A Checklist
+- [*] checked
+- [x] also checked
+- [ ] not checked
+-     normal list item
+
+=== Section A Subsection
+
+*Section A* 'subsection' paragraph.
+
+> Minions ipsum jeje la bodaaa poopayee me want bananaaa!
+> Butt hahaha bee do bee do bee do bananaaaa.
+> Gelatooo tank yuuu! Butt la bodaaa ti aamoo!
+> -- Minions, Minions ipsum
+
+== Section B
+
+*Section B* paragraph.
+
+**b**old le**tt**ers (no style for that, bug ?)
+_italic phrase_
+__i__talic le__tt__ers
+**__b__**old italic le**__tt__**ers
+`monospace phrase` and le``tt``ers
+^super^script phrase
+~sub~script phrase
+
+Go to http://asciidoctor.org - automatic!
+Go to http://asciidoctor.org[Asciidoctor] (already existing bug)
+Go to https://github.com/asciidoctor[Asciidoctor @ *GitHub*] (already existing bug)
+
+image::sunset.jpg[]
+image::sunset.jpg[Sunset]
+
+[source, shell]
+----
+coffeelint -f coffeelint.json **/*.{cson,coffee}
+# or
+coffeelint -f coffeelint.json grammars/asciidoc.cson spec/asciidoc-spec.coffee snippets/language-asciidoc.cson
+----
+
+[[app-listing]]
+[source,ruby]
+.app.rb
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+----
+
+* *bold*
+*bold*
+*bold text*
+*bold*text*
+*bold* text *bold* text
+* text*
+text *bold*
+"*" text *bold*
+*bold *text*
+* Something http://blah.com[link text] etc.
+
+_italic phrase_ text
+_italic_phrase_ text
+_text _italic phrase_
+"_" _text _italic phrase_
+_italic phrase_ text _italic phrase_ text
